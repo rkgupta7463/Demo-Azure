@@ -11,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Set up Python version
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: '3.10'
 
@@ -32,9 +33,9 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: python-app
-          path: |
-            .
-            !venv/
+          path: .
+          exclude: |
+            venv/**
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,35 +53,7 @@ jobs:
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
-        id: deploy-to-webapp
         with:
           app-name: 'Demo-Django-App'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_00803555BE8C4E70BE90F908D4CA8CF6 }}
-
-# Routing configuration
-  routing:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Create staticwebapp.config.json
-        run: echo '{
-          "routes": [
-            {
-              "route": "/static",
-              "allowedRoles": ["anonymous", "authenticated"],
-              "path": "static"
-            },
-            {
-              "route": "/*",
-              "allowedRoles": ["anonymous", "authenticated"],
-              "path": "public/index.html"
-            }
-          ]
-        }' > staticwebapp.config.json
-
-      - name: Upload staticwebapp.config.json
-        uses: actions/upload-artifact@v2
-        with:
-          name: routing-config
-          path: staticwebapp.config.json
