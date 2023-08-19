@@ -1,0 +1,203 @@
+.sidebar nav ul li a{
+    padding: 0px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.fa{
+    color: white;
+    margin: 0 2px;
+}
+.log img{
+    width: 40px;
+    margin: 10px 10px;
+    border-radius: 5px 15px;
+    transform: rotate3d(0deg);
+    perspective: 10px;
+    transform: rotateY(50deg);
+    transform-style:preserve-3d ;
+    /* transition: transform 1s; */
+}
+.sidebar nav li{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    /* padding: 30px 0; */
+    padding: 12px 5px ;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+/*     background: url('../images/img\ \(3\).jpg') no-repeat center center/cover; */
+    top: 0;
+    left: 0;
+    height: 125%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.cen img{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 15px 25px 50px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+padding: 0px 10px;
+}
+.sidebar{
+    display: flex;
+    background-color: rgb(90, 80, 80);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 10vh;
+    opacity: 0.6;
+}
+.skillcontainer{
+    border-radius: 10px;
+    box-shadow: 15px 25px 50px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+padding: 0px 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-family: cursive;
+}
+.skill{
+    position: relative;
+    width: 258px;
+    height: 8px;
+    background-color: red;
+    border-radius: 5px;
+    animation-name: HTML;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes HTML{
+from{
+    width: 200px;
+}
+to{
+    width: 258px;
+}
+}
+.skill7{
+    width: 200px;
+    height: 8px;
+    background-color: yellow;
+    border-radius: 5px;
+    animation-name: CSS;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes CSS{
+    from{
+        width: 150px;
+    }
+    to{
+        width: 200px;
+    }
+}
+.skill2{
+    width: 258px;
+    height: 8px;
+    background-color: blue;
+    border-radius: 5px;
+    animation-name: TALLY;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes TALLY{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 258px;
+    }
+}
+.skill3{
+    width: 100px;
+    height: 8px;
+    background-color: green;
+    border-radius: 5px;
+    animation-name: MSWord;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes MSWord{
+    from{
+        width: 70px;
+    }
+    to{
+        width: 100px;
+    }
+    }
+.skill4{
+    width: 150px;
+    height: 8px;
+    background-color: brown;
+    border-radius: 5px;
+    animation-name:MSExecl ;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes MSExecl{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 150px;
+    }
+    }
+.skill5{
+    width: 50px;
+    height: 8px;
+    background-color: rgb(9, 240, 228);
+    border-radius: 5px;
+    animation-name: MSPowerpoint;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes MSPowerpoint{
+    from{
+        width: 30px;
+    }
+    to{
+        width: 50px;
+    }
+    }
+.skill6{
+    width: 50px;
+    height: 8px;
+    background-color: rgb(248, 183, 4);
+    border-radius: 5px;
+    animation-name: PYTHON;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes PYTHON{
+    from{
+        width: 30px;
+    }
+    to{
+        width: 50px;
+    }
+    }
+    .devintro p{
+        margin: 10px;
+        color: azure;
+        font-family: monospace;
+        font-size: smaller;
+    }
+    #cert img{
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.8);
+    }
+    #img:hover{
+        width: 142px;
+        }
+        #img1:hover{
+        width: 142px;
+        }
+        #img2:hover{
+        width: 142px;
+        }

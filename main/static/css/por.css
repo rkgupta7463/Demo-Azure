@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+.sidebar{
+    display: flex;
+    background-color: gray;
+    /* width: 250px; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 15vh;
+    opacity: 0.6;
+}
+.fa{
+    color: white;
+    margin: 0 2px; 
+}
+.sidebar nav{
+    display: inline-block;
+    margin: auto;
+}
+.sidebar nav li{
+    display: inline-block;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    /* padding: 30px 0; */
+    padding: 15px 12px ;
+}
+.sidebar ul{
+    text-align: center;
+    font-size: x-large
+}
+.sidebar nav ul li a{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
+.main{
+    content: "";
+    position: absolute;
+    background: url('https://source.unsplash.com/random/?hills') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+.main{
+margin-right: 230px;
+}
+.devinfo{
+position: relative;
+/* width: 100px; */
+margin: 10px;
+padding: 0px 10px;
+box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.8);
+
+}
+.container{
+    /* display: flex; */
+}
+.info{
+    /* background-color: rgb(151, 3, 236); */
+    height: 75vh;
+    width: 70vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    font-size:medium;
+    font-weight: 900;
+}
+.devinfo p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: whitesmoke;
+    font-size: x-large;
+    font-weight: 900; */
+    color: azure;
+    font-family: monospace;
+    font-size: larger;
+
+}
+.devinfo{
+    padding-top: 20px;
+    margin: 25px;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: larger;
+    margin-left: 20px;
+
+}
+/* .devpic img{
+    /* width: 200px; */
+    /* height: 55vh;
+    border-radius: 20px;
+} */
+.devinfo .hello{
+    font-size: 20px;
+    font-family: cursive;
+    padding-top: 20px;
+}
+
+.name{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+.about{ 
+    font-family: 'Indie Flower', cursive;
+    padding-bottom: 20px;
+}
+.buttons button{
+    margin-top: 20px;
+    background-color: pink;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 14px 3px;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.buttons button a{
+    text-decoration: none;
+
+}
+.buttons button:hover{
+   background-color: rgb(197, 37, 63);
+}
+.log img{
+    width: 50px;
+    margin: 10px 10px;
+    border-radius: 5px 15px;
+    transform: rotate3d(0deg);
+    perspective: 10px;
+    transform: rotateY(50deg);
+    transform-style:preserve-3d ;
+}
+
+#phone{
+    text-decoration: none;
+    padding-right:10px ;
+    margin-top: 10px;
+}
+.phm{
+    margin-top: 10px;
+    font-size: medium;
+    display: inline-block;
+    box-shadow: 30 30 50(0,0,0,0.5);
+}
+#email{
+    text-decoration: none;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+#cal{
+    text-decoration: none;
+    padding-right:10px ;
+}
+.phm a{
+    color: rgb(43, 42, 42);
+    text-decoration: none;
+}
+.phm a:hover{
+    color: rgb(255, 1, 1);
+}
+.icon{
+    font-size: x-large;
+    margin-right: 22px;
+    margin-top: 20px;
+}

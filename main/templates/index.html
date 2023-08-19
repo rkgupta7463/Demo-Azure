@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishu kumar gupta - web developer, Programmer</title>
+    <link rel="stylesheet" href="{% static 'css/por.css' %}">
+    <link rel="stylesheet" media="screen and (max-width:500px" href="{% static 'css/p.css' %}">
+    <script src="https://use.fontawesome.com/b3992e6ca6.js"></script>
+    <script src="https://kit.fontawesome.com/6ed6b5caaa.js" crossorigin="anonymous"></script>
+    </style>
+    <!-- <link rel="stylesheet" media="screen and (min-width:444px" href="pr.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar ">
+            <div class="log">
+                <img src="{% static 'img/r1.png' %}" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'home' %}">About me</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <a href="https://github.com/rkgupta7463/"><i class="fa fa-github-square" aria-hidden="true" id="gith"></i></a>
+                <a href="https://twitter.com/ActGupta/"><i class="fa fa-twitter-square" aria-hidden="true" id="twit"></i></a>
+                <a href="https://www.instagram.com/rishu_gupta_act_2003/"><i class="fa fa-instagram" aria-hidden="true" id="insta"></i></a>
+                <a href="https://www.linkedin.com/in/rishu-gupta-058737217/"><i class="fa fa-linkedin-square" aria-hidden="true"id="link"></i></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="info">
+                <div class="devinfo">
+                    <div class="hello">
+                        <h5>Hello Everybody, I AM</h5>
+                    </div>
+                    <div class="name">Rishu Gupta</div>
+                    <div class="about">JUNIOR DEVELOPER</div>
+                    <p>I am Developer and like web development. I love Nature and sea also beach. I am from bihar,but i am studay in klu vijawada(A.p) for BCA Degree</p>
+                    <div class="phm">
+                        <a href=""><i class="fa fa-calendar" aria-hidden="true" id="cal"></i> 12th jan, 2022</a>
+                        <br>
+                        <a href="#" class="ph"><i class="fa fa-phone" aria-hidden="true" id="phone"></i>  Phone no: +91 7463906582</a>
+                        <br>
+                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true" id="email"></i>Email Id: rishukumargupta8409@gmail.com</a>
+                    </div>
+                    <!-- <div class="buttons"> -->
+                    <!-- target equal to means if you click than is it is open another pages -->
+                    <!-- <a href="/CV.txt" target="blank"><button>Download CV</button></a>
+                            <a href="/contact.html"><button>Contact me</button></a> -->
+                </div>
+            </div>
+            <!-- <div class="devpic"><img src="gp.jpg" alt="Rishu"></div> -->
+        </div>
+    </div>
+    </div>
+    <script>
+        swal({
+            title: " Welcome to my wesite",
+            text: "Have a nice day!",
+        });
+    </script>
+    <!-- <script src="pro.js"></script> -->
+</body>
+
+</html>

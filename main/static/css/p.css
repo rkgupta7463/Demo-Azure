@@ -1,0 +1,115 @@
+.info {
+    /* background-color: rgb(151, 3, 236); */
+    height: 75vh;
+    width: 70vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: 900;
+}
+* 
+.sidebar nav ul li a{
+    padding: 0px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.sidebar{
+    display: flex;
+    background-color: gray;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 10vh;
+ 
+   opacity: 0.6;
+}
+.fa{
+    margin: 0 2px;
+}
+li{
+    padding: 0 5px;
+} */
+.sidebar nav ul li a{
+    padding: 0px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.fa{
+    color: white;
+    margin: 0 2px;
+}
+.log img{
+    width: 40px;
+    margin: 10px 10px;
+    border-radius: 5px 15px;
+    transform: rotate3d(0deg);
+    perspective: 10px;
+    transform: rotateY(50deg);
+    transform-style:preserve-3d ;
+    /* transition: transform 1s; */
+}
+.sidebar nav li{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    /* padding: 30px 0; */
+    padding: 12px 5px ;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+
+}
+.sidebar{
+    display: flex;
+    background-color: rgb(90, 80, 80);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 10vh;
+    opacity: 0.6;
+}
+.devinfo p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: whitesmoke;
+    font-size: x-large;
+    font-weight: 900; */
+    color: azure;
+    font-family: monospace;
+    font-size: medium;
+
+}
+.devinfo{
+    padding-top: 0px;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: larger;
+    margin-left: 50px;
+
+}
+/* .icon{
+    font-size: larger;
+    margin-right: 38px;
+    margin-top: 22px;
+} */
+.log img{
+    width: 45px;
+    margin: 10px 10px;
+    border-radius: 5px 15px;
+    transform: rotate3d(0deg);
+    perspective: 10px;
+    transform: rotateY(50deg);
+    transform-style:preserve-3d ;
+}
+

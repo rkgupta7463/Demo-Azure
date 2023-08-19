@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.sidebar{
+    display: flex;
+    background-color: gray;
+    /* width: 250px; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 15vh;
+    opacity: 0.7;
+
+}
+.fa{
+    color: white;
+    margin: 0 2px; 
+}
+.sidebar nav{
+    display: inline-block;
+    margin: auto;
+}
+.sidebar nav li{
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    /* padding: 30px 0; */
+    padding: 15px 12px ;
+}
+.sidebar nav ul li{
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+.sidebar nav ul li a{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+ul{
+    font-size: x-large
+}
+.main::before{
+    content: "";
+    position: absolute;
+    background: url('https://source.unsplash.com/random/?nature') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 160%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.main{
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+.container{
+    /* display: flex; */
+}
+.my-intro{
+    margin: 10px 14px;
+}
+.devintro h1{
+    font-family: 'fira sans',sans-serif;
+    margin: 10px;
+    color: aliceblue;
+    font-family: cursive;
+}
+.devintro p{
+    margin: 10px;
+    color: azure;
+    font-family: monospace;
+    font-size: larger;
+}
+.box{
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    border-radius: 10px;
+    box-shadow: 15px 25px 50px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+padding: 0px 10px;
+}
+.skillcontainer{
+    border-radius: 10px;
+    box-shadow: 15px 25px 50px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+padding: 0px 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-family: cursive;
+}
+.skill{
+    position: relative;
+    width: 300px;
+    height: 8px;
+    background-color: red;
+    border-radius: 5px;
+    animation-name: HTML;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes HTML{
+from{
+    width: 300px;
+}
+to{
+    width: 350px;
+}
+}
+.skill7{
+    width: 200px;
+    height: 8px;
+    background-color: yellow;
+    border-radius: 5px;
+    animation-name: CSS;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes CSS{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 250px;
+    }
+}
+.skill2{
+    width: 300px;
+    height: 8px;
+    background-color: blue;
+    border-radius: 5px;
+    animation-name: TALLY;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes TALLY{
+    from{
+        width: 300px;
+    }
+    to{
+        width: 350px;
+    }
+}
+.skill3{
+    width: 250px;
+    height: 8px;
+    background-color: green;
+    border-radius: 5px;
+    animation-name: MSWord;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes MSWord{
+    from{
+        width: 250px;
+    }
+    to{
+        width: 300px;
+    }
+    }
+.skill4{
+    width: 150px;
+    height: 8px;
+    background-color: brown;
+    border-radius: 5px;
+    animation-name:MSExecl ;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes MSExecl{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 150px;
+    }
+    }
+.skill5{
+    width: 50px;
+    height: 8px;
+    background-color: rgb(9, 240, 228);
+    border-radius: 5px;
+    animation-name: MSPowerpoint;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes MSPowerpoint{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 100px;
+    }
+    }
+.skill6{
+    width: 50px;
+    height: 8px;
+    background-color: rgb(248, 183, 4);
+    border-radius: 5px;
+    animation-name: PYTHON;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes PYTHON{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 100px;
+    }
+    }
+.cen img{
+    width: 140px;
+    border-radius: 10px;
+    box-shadow: 15px 25px 50px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    padding: 0px 10px;
+} 
+.log img{
+    width: 50px;
+    margin: 10px 10px;
+    border-radius: 5px 15px;
+    transform: rotate3d(0deg);
+    perspective: 10px;
+    transform: rotateY(50deg);
+    transform-style:preserve-3d ;
+    /* transition: transform 1s; */
+}
+#phone{
+    text-decoration: none;
+    padding-right:10px ;
+    margin-top: 5px;
+    color: white;
+}
+.phm{
+    height: 20vh;
+    width: 95%;
+    padding: 5px;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: medium;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 20px 70px 10px rgba(0, 0, 0, 0.92);
+    text-align: center;
+    color: aliceblue;
+}
+#email{
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+#cal{
+    text-decoration: none;
+    padding-right:10px ;
+    color: white;
+}
+.phm a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.icon{
+    font-size: x-large;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+#cert img{
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+#img:hover{
+width: 135px;
+transition-property: width;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+}
+#img1:hover{
+    width: 135px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function:ease-in;
+}
+#img2:hover{
+    width: 135px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
